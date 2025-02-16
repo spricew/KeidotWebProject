@@ -4,8 +4,9 @@
 
 :root {
   /* paleta de colores */
-  --background: #ffffff;
-  --foreground: #252525;
+  --defaultWhite: #ffffff;
+  --defaultBlack: #252525;
+  --foreground: #12372A;
   --highlight: #3BA670;
   --primary: #296a48;
   --primaryContainer: #aef2c6;
@@ -15,31 +16,42 @@
   --textTertiaryContainer: #224c58;
   --surface: #f6fbf4;
   --error: #ba1a1a;
+  /* paleta de colores dark theme */
+  --darkContainer: #1B211D;
+  --darkThemed: #0F1511; 
+  --highlightThemed: #91D5AD;
 }
 
 *{
   font: 20px "Poppins", sans-serif;
+  color: var(--foreground);
 }
 
 /* ignorar por ahora */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffffff;
-    --foreground: #252525;
-  }
-}
+/* @media (prefers-color-scheme: dark) { */
+  /* :root { */
+    /* --defaultWhite: #ffffff; */
+    /* --foreground: #252525; */
+  /* } */
+/* } */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background: var(--defaultWhite);
 }
 
-/* hacer que los enlaces tengan menos separacion de letras */
-a {
-  letter-spacing: -0.05rem;
-}
-
-/* cambiar los colores de las opciones del nav */
+/* cambiar propiedades de las opciones del nav */
 nav a {
+  letter-spacing: -0.04rem;
+  color: var(--primary);
+}
+
+a{
+  transition: 0.25s cubic-bezier(0, .37, .32, 1);
+}
+
+.btn:hover:hover {
+  transition: 0.25s cubic-bezier(0, .37, .32, 1);
+  transform: scale(1.05);
+  background-color: white;
   color: var(--primary);
 }
