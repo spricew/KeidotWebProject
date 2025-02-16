@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 :root {
+  /* paleta de colores */
   --background: #ffffff;
   --foreground: #252525;
+  --highlight: #3BA670;
   --primary: #296a48;
   --primaryContainer: #aef2c6;
   --textPrimaryContainer: #075232;
@@ -19,6 +21,7 @@
   font: 20px "Poppins", sans-serif;
 }
 
+/* ignorar por ahora */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
@@ -29,5 +32,14 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* hacer que los enlaces tengan menos separacion de letras */
+a {
+  letter-spacing: -0.05rem;
+}
+
+/* cambiar los colores de las opciones del nav */
+nav a {
+  color: var(--primary);
 }
