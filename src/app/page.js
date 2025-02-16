@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react"; // Íconos para menú
-
+import BlurText from "../../components/blurText";
 
 export default function Home() {
   // inicializacion de metodos
@@ -13,10 +13,6 @@ export default function Home() {
   };
   
 
-
-
-
-  
   return (
     // contenedor principal
     <div className="flex flex-col min-h-screen bg-white text-gray-900">
@@ -72,13 +68,14 @@ export default function Home() {
       {/* cuerpo principal */}
       <main className="flex-grow flex flex-col items-center justify-center p-6 md:p-12">
       <BlurText
-        text="Isn't this so cool?!"
-        delay={150}
+        text="Muerte a Quokka!"
+        delay={200}
         animateBy="words"
         direction="top"
         onAnimationComplete={handleAnimationComplete}
-        className="text-2xl mb-8"
-      />
+        className="text-sm mb-8"/>
+
+
         <h1 className="text-3xl md:text-4xl font-semibold text-center">Contrata un jardinero</h1>
         <p className="text-lg md:text-lg text-gray-600 mt-4">este es un subtitulo.</p>
         <a 
