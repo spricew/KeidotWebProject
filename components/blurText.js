@@ -27,7 +27,7 @@ const BlurText = ({
 
   const defaultTo = [
     {
-      filter: 'blur(4px)',
+      filter: 'blur(5px)',
       opacity: 0.5,
       transform: direction === 'top' ? 'translate3d(0,5px,0)' : 'translate3d(0,-5px,0)',
     },
@@ -79,6 +79,8 @@ const BlurText = ({
             ...props,
             display: 'inline-block',
             willChange: 'transform, filter, opacity',
+            fontSize: 'inherit',
+            fontWeight: 'inherit'
           }}
         >
           {elements[index] === ' ' ? '\u00A0' : elements[index]}

@@ -1,5 +1,7 @@
+//hacer que el navegador del usuario sea el que renderize los elementos
 "use client";
 
+// librerias
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react"; // Íconos para menú
@@ -8,9 +10,6 @@ import BlurText from "../../components/blurText";
 export default function Home() {
   // inicializacion de metodos
   const [menuOpen, setMenuOpen] = useState(false);
-  const handleAnimationComplete = () => {
-    console.log('Animation completed!');
-  };
   
 
   return (
@@ -67,16 +66,15 @@ export default function Home() {
 
       {/* cuerpo principal */}
       <main className="flex-grow flex flex-col items-center justify-center p-6 md:p-12">
-      <BlurText
-        text="Muerte a Quokka!"
+      
+
+        <BlurText
+        text="Bienvenido a Keidot!"
         delay={200}
         animateBy="words"
         direction="top"
-        onAnimationComplete={handleAnimationComplete}
-        className="text-sm mb-8"/>
+        className="md:text-5xl text-xl mb-8 block tracking-tighter font-semibold"/>
 
-
-        <h1 className="text-3xl md:text-4xl font-semibold text-center">Contrata un jardinero</h1>
         <p className="text-lg md:text-lg text-gray-600 mt-4">este es un subtitulo.</p>
         <a 
           href="/about"
