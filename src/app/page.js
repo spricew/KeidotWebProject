@@ -10,28 +10,28 @@ export default function Home() {
         </div>
         {/* opciones de la nav bar */}
         <ul id="navOptions" className="flex justify-center gap-14 w-auto capitalize text-[var(--foreground)]">
-          <li>
-            <a href="/" className="hover:underline font-medium text-sm">inicio</a>
+          <li className="navOpt">
+            <a href="/" className="font-medium text-sm">inicio</a>
           </li>
-          <li>
-            <a href="/about" className="hover:underline font-medium text-sm">servicios</a>
+          <li className="navOpt">
+            <a href="/about" className="font-medium text-sm">servicios</a>
           </li>
-          <li>
-            <a href="/contact" className="hover:underline font-medium text-sm">acerca de</a>
+          <li className="navOpt">
+            <a href="/contact" className="font-medium text-sm">acerca de</a>
           </li>
-          <li>
-            <a href="/contact" className="hover:underline font-medium text-sm">ayuda</a>
+          <li className="navOpt">
+            <a href="/contact" className="font-medium text-sm">ayuda</a>
           </li>
         </ul>
       </nav>
 
       {/* cuerpo principal */}
       <main className="flex-grow flex flex-col items-center justify-center p-12">
-        <h1 className="text-4xl font-bold text-gray-800">Contrata un jardnero</h1>
-        <p className="text-lg text-gray-600 mt-4">assda.</p>
+        <h1 className="text-4xl font-semibold">Contrata un jardinero</h1>
+        <p className="text-lg text-gray-600 mt-4">este es un subtitulo.</p>
         <a 
           href="/about"
-          className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition"
+          className="btn mt-6 px-6 py-2 bg-[var(--primary)] border-b text-white rounded-full font-medium text-base"
         >
           Solicitar
         </a>
