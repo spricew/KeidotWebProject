@@ -4,13 +4,25 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #252525;
+  --primary: #296a48;
+  --primaryContainer: #aef2c6;
+  --textPrimaryContainer: #075232;
+  --tertiary: #3b6471;
+  --tertiaryContainer: #bfe9f8;
+  --textTertiaryContainer: #224c58;
+  --surface: #f6fbf4;
+  --error: #ba1a1a;
+}
+
+*{
+  font: 20px "Poppins", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #252525;
   }
 }
 
