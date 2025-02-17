@@ -103,7 +103,7 @@ export default function Home() {
       {/* seccion de descarga */}
       <section className="w-full h-auto md:px-24 px-4 py-20 flex flex-col items-center">
 
-        <div className="flex flex-row justify-between w-full relative bottom-36 ">
+        <div className="flex flex-row justify-between w-full relative bottom-36 h-auto">
         
         <StarBorder
           as="container"
@@ -111,25 +111,25 @@ export default function Home() {
           color="var(--primaryContainer)"
           speed="5s"
         >
-          <h3 className="font-medium text-left">Cuida y transforma tu jardín de manera fácil y rápida. Encuentra expertos en jardinería, renta herramientas y más, todo desde nuestra app.</h3>
+          <h3 className="font-medium text-left">Keidot hace que cuidar tu jardín sea sencillo. Conecta con expertos, renta herramientas y mantén tu jardín perfecto todo el año.</h3>
         </StarBorder>  
 
         <StarBorder
           as="container"
-          className="p-6 rounded-xl w-full mx-4"
+          className="p-6 rounded-xl w-full mx-4 h-full"
           color="var(--primaryContainer)"
           speed="5s"
         >
-          <h3 className="font-medium text-left">Cuida y transforma tu jardín de manera fácil y rápida. Encuentra expertos en jardinería, renta herramientas y más, todo desde nuestra app.</h3>
+          <h3 className="font-medium text-left">Tu jardín siempre está en las mejores manos. Encuentra servicios profesionales de jardinería y todo lo que necesitas al alcance de un clic.</h3>
         </StarBorder>  
 
         <StarBorder
           as="container"
-          className="p-6 rounded-xl w-full"
+          className="p-6 rounded-xl w-full starcontainer h-full"
           color="var(--primaryContainer)" 
           speed="5s"
         >
-          <h3 className="font-medium text-left">Cuida y transforma tu jardín de manera fácil y rápida. Encuentra expertos en jardinería, renta herramientas y más, todo desde nuestra app.</h3>
+          <h3 className="font-medium text-left h-21">Keidot es tu aliado en el cuidado del jardín. Accede a servicios personalizados, renta de herramientas, limpieza de patio y más, todo desde tu teléfono.</h3>
         </StarBorder>  
 
 
