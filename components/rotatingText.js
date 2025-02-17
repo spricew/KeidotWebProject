@@ -10,7 +10,7 @@ import {
 } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import "../src/app/rotatingText.css";
+import "./styles/rotatingText.css";
 
 function cn(...classes) {
   return classes.filter(Boolean).join(" ");
