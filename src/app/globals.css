@@ -26,7 +26,6 @@
 /* selector universal de elementos */
 *{
   font: 20px "Poppins", sans-serif;
-  color: var(--foreground);
 }
 /* 
 ignorar por ahora
@@ -37,21 +36,20 @@ ignorar por ahora
   }
 } */
 
+/* 
 body {
   background: var(--defaultWhite);
-}
+} */
 
 /* cambiar propiedades de las opciones del nav */
 nav a {
   transition: 0.25s cubic-bezier(0, .37, .32, 1);
   letter-spacing: -0.04rem;
-  color: var(--primary);
 }
 
 /* animacion de opciones del nav */
 .navOpt {
   transition: 0.25s cubic-bezier(0, .37, .32, 1);
-  color: var(--highlight);
 }
 
 .navOpt:hover {

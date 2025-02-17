@@ -80,7 +80,8 @@ const BlurText = ({
             display: 'inline-block',
             willChange: 'transform, filter, opacity',
             fontSize: 'inherit',
-            fontWeight: 'inherit'
+            fontWeight: 'inherit',
+            color:'inherit',
           }}
         >
           {elements[index] === ' ' ? '\u00A0' : elements[index]}
