@@ -9,6 +9,7 @@ import BlurText from "../../components/blurText";
 import ShinyText from "../../components/ShinyText";
 import { ChevronRight } from "lucide-react";
 import RotatingText from "../../components/rotatingText";
+import StarBorder from "../../components/starBorder";
 
 export default function Home() {
   // inicializacion de metodos
@@ -20,9 +21,10 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
 
       {/* seccion de binevenida */}
-      <section className="h-screen flex flex-col bg-[url('/images/bgBanner.jpeg')] bg-cover bg-center bg-no-repeat">
+      <section className="h-[calc(100vh+150px)] flex flex-col bg-[url('/images/bgBanner.jpeg')] bg-cover bg-center bg-no-repeat">
+
         {/* Capa oscura encima de la imagen */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/60 h-[calc(100vh+150px)]"></div>
 
 
         {/* barra de navegacion principal */}
@@ -74,7 +76,7 @@ export default function Home() {
 
 
         {/* cuerpo principal */}
-        <main className="flex-grow flex flex-col items-center justify-center relative bottom-10">
+        <main className="flex-grow flex flex-col items-center justify-center relative bottom-24">
 
           {/* texto de bienvenida animado */}
           <BlurText
@@ -82,17 +84,17 @@ export default function Home() {
           delay={200}
           animateBy="words"
           direction="top"
-          className="z-10 md:text-5xl text-2xl block tracking-tighter font-medium text-[var(--defaultWhite)]"/>
+          className="z-10 md:text-5xl text-2xl block tracking-tighter font-medium text-[var(--defaultWhite)] -mb-4"/>
 
-          {/* <ShinyText text="Just some shiny sda!"/> */}
+          <ShinyText text="Sin negociaciones confusas, sin llamadas interminables. Solo una solución rápida y directa"
+          speed={3}
+          className="text-lg md:text-lg text-[var(--defaultWhite)] text-center z-10 my-4"/>
 
-
-          <p className="text-lg md:text-lg text-[var(--defaultWhite)] mt-2 text-center z-10">Sin negociaciones confusas, sin llamadas interminables.<br/> Solo una solución rápida y directa</p>
           <a 
             href="/about"
-            className="z-10 btn mt-6 px-6 py-2 bg-[var(--primary)] border-[var(--highlight)] text-[var(--defaultWhite)] rounded-full font-medium text-base flex items-center gap-2"
+            className="z-10 btn px-6 py-2 bg-[var(--primary)] border-[var(--highlight)] text-[var(--defaultWhite)] rounded-full font-medium text-base flex items-center gap-2"
           >
-            Descubrir <ChevronRight size={24} color="white" />
+            Descubrir <ChevronRight size={24} color="white"/>
           </a>
 
         </main>
@@ -101,41 +103,40 @@ export default function Home() {
       {/* seccion de descarga */}
       <section className="w-full h-auto md:px-24 px-4 py-20 flex flex-col items-center">
 
-        {/*subtitulo*/}
-        <div className="flex flex-row w-full mb-6 h-auto place-items-center">
-          <h2 className="mr-2 text-3xl font-semibold tracking-tighter">Con Keidot</h2>
+        <div className="flex flex-row justify-between w-full relative bottom-36 ">
+        
+        <StarBorder
+          as="container"
+          className="p-6 rounded-xl w-full"
+          color="var(--primaryContainer)"
+          speed="5s"
+        >
+          <h3 className="font-medium text-left">Cuida y transforma tu jardín de manera fácil y rápida. Encuentra expertos en jardinería, renta herramientas y más, todo desde nuestra app.</h3>
+        </StarBorder>  
 
-          {/* texto rotante */}
-          <RotatingText
-            texts={['Corta tu césped', 'Limpia tu patio', 'Compra plantas', 'Decora tu jardín']}
-            mainClassName="bg-[var(--primary)] justify-center w-auto p-2 rounded-md"
-            staggerFrom={"last"}
-            initial={{ y: "100%" }}
-            animate={{ y: 0 }}
-            exit={{ y: "-120%" }}
-            staggerDuration={0.025}
-            splitLevelClassName="overflow-hidden"
-            transition={{ type: "spring", damping: 30, stiffness: 350 }}
-            rotationInterval={3200}
-            elementLevelClassName="text-white text-3xl font-medium tracking-tighter"
-          />
+        <StarBorder
+          as="container"
+          className="p-6 rounded-xl w-full mx-4"
+          color="var(--primaryContainer)"
+          speed="5s"
+        >
+          <h3 className="font-medium text-left">Cuida y transforma tu jardín de manera fácil y rápida. Encuentra expertos en jardinería, renta herramientas y más, todo desde nuestra app.</h3>
+        </StarBorder>  
+
+        <StarBorder
+          as="container"
+          className="p-6 rounded-xl w-full"
+          color="var(--primaryContainer)" 
+          speed="5s"
+        >
+          <h3 className="font-medium text-left">Cuida y transforma tu jardín de manera fácil y rápida. Encuentra expertos en jardinería, renta herramientas y más, todo desde nuestra app.</h3>
+        </StarBorder>  
+
+
+       
         </div>
 
-        <div className="flex flex-row justify-between w-full">
-          
-          <div className="p-6 bg-[var(--surface)] border rounded-lg w-80">
-            <h3 className="font-medium">Cuida y transforma tu jardín de manera fácil y rápida. Encuentra expertos en jardinería, renta herramientas y más, todo desde nuestra app.</h3>
-          </div>
-
-          <div className="p-4 bg-[var(--surface)] border rounded-lg w-80">
-            <h3 className="font-medium"></h3>
-          </div>
-
-          <div className="p-4 bg-[var(--surface)] border rounded-lg w-80">
-            <h3 className="font-medium">Cuida y transforma tu jardín de manera fácil y rápida. Encuentra expertos en jardinería, renta herramientas y más, todo desde nuestra app.</h3>
-          </div>
-          
-        </div>        
+            
         
 
       </section>
