@@ -55,6 +55,7 @@ nav a {
 .navOpt:hover {
   transition: 0.25s cubic-bezier(0, .37, .32, 1);
   transform: scale(1.05 );
+  color: var(--highlight);
 }
 
 /* animacion de botones */
@@ -68,4 +69,3 @@ nav a {
   background-color: var(--whiteThemed);
   color: var(--primary);
 }
-
