@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     white-space: pre-wrap;
-    position: relative;
+  position: relative;
   }
   
   .text-rotate-sr-only {

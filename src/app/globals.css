@@ -9,6 +9,7 @@
   --foreground: #12372A;
   --highlight: #3BA670;
   --primary: #296a48;
+  --primaryHigh: #2c8557;
   --primaryContainer: #aef2c6;
   --textPrimaryContainer: #075232;
   --tertiary: #3b6471;
@@ -19,14 +20,15 @@
   --error: #ba1a1a;
   /* paleta de colores dark theme */
   --darkContainer: #1B211D;
-  --darkThemed: #0F1511; 
+  --darkThemed: #0F1511;
   --highlightThemed: #91D5AD;
 }
 
 /* selector universal de elementos */
-*{
+* {
   font: 20px "Poppins", sans-serif;
 }
+
 /* 
 ignorar por ahora
 @media (prefers-color-scheme: dark) {
@@ -54,23 +56,31 @@ nav a {
 
 .navOpt:hover {
   transition: 0.25s cubic-bezier(0, .37, .32, 1);
-  transform: scale(1.05 );
+  transform: scale(1.05);
   color: var(--highlight);
 }
 
 /* animacion de botones */
-.btn{
+.btn {
   transition: 0.3s cubic-bezier(0, .37, .32, 1);
   border: 1px solid #3b7354;
+  background: var(--primary);
 
 }
 
 .btn:hover {
   transition: 0.3s cubic-bezier(0, .37, .32, 1);
   transform: scale(1.05);
-  background-color: #2c8557;
+  background: var(--primaryHigh);
 }
 
-.shiny-text{
+.shiny-text {
   width: 28rem;
+}
+
+.gradText {
+  background: linear-gradient(90deg, #3CB978 5.22%, #308157 83.1%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
