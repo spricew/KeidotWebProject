@@ -102,7 +102,7 @@ export default function Home() {
 
 
       {/* seccion de descarga */}
-      <section className="w-full h-auto md:px-24 px-4 py-20 flex flex-col items-center">
+      <section className="w-full h-auto md:px-24 px-4 pt-20 flex flex-col items-center">
 
         <div className="flex flex-row justify-between w-full relative bottom-36 h-auto">
 
@@ -136,10 +136,10 @@ export default function Home() {
         </div>
 
         {/*subtitulo*/}
-        <div className="flex flex-col w-full mb-6 h-auto items-center justify-center bg-cyan-50">
+        <div className="flex flex-col w-full mb-6 h-auto items-center justify-center -mt-6">
 
           <div className="w-full flex justify-center items-center">
-          <h2 className="gradText mr-1 text-3xl font-semibold tracking-tighter">Con Keidot</h2>
+            <h2 className="gradText mr-1 text-3xl font-semibold tracking-tighter -mb-2">Con Keidot</h2>
           </div>
 
           {/* texto rotante */}
@@ -156,12 +156,26 @@ export default function Home() {
             rotationInterval={3200}
             elementLevelClassName="text-3xl font-semibold tracking-tighter"
           />
+
         </div>
       </section>
 
       {/* footer */}
       <footer className="bg-[var(--darkThemed)] p-4 mt-auto w-full">
-        <p className="text-[var(--defaultWhite)] text-xs md:text-xs">&copy; 2025 Keidot. Todos los derechos reservados.</p>
+        <div className="w-full h-auto">
+          <span className="font-medium tracking-tight text-xl text-[var(--highlight)]">Recursos</span>
+          <div className="flex flex-col mt-2">
+              <a href="/" className="text-sm text-[var(--defaultWhite)]">Aplicación</a>
+              <a href="/" className="text-sm text-[var(--defaultWhite)]">Ducumentación</a>
+              <a href="/" className="text-sm text-[var(--defaultWhite)]">FAQ</a>
+          </div>
+          
+        </div>
+
+
+
+
+        <p className="text-[var(--defaultWhite)] text-xs md:text-xs mt-6">&copy; 2025 Keidot. Todos los derechos reservados.</p>
       </footer>
     </div>
   );
