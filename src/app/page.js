@@ -10,6 +10,7 @@ import ShinyText from "../../components/ShinyText";
 import { ChevronRight } from "lucide-react";
 import RotatingText from "../../components/rotatingText";
 import StarBorder from "../../components/starBorder";
+import Navbar from "../../components/navBar";
 
 export default function Home() {
   // inicializacion de metodos
@@ -28,52 +29,8 @@ export default function Home() {
 
 
         {/* barra de navegacion principal */}
-        <nav className="relative z-50 px-6 md:px-24 flex justify-between items-center md:h-20 h-12">
 
-          {/* contenedor de logo */}
-          <div className="w-auto flex flex-row h-full place-items-center">
-            <img src="/images/Logo.png" alt="Keidot Logo" className="h-5 md:h-8 mr-2" id="mainNavLogo" />
-            <span className="tracking-tight font-semibold text-[var(--defaultWhite)] text-sm md:text-lg">Keidot</span>
-          </div>
-
-          {/* opciones de la nav bar */}
-          <ul id="navOptions" className="hidden md:flex justify-center gap-14 capitalize text-white">
-
-            <li className="navOpt">
-              <a href="/" className="font-medium text-sm">inicio</a>
-            </li>
-            <li className="navOpt">
-              <a href="/about" className="font-medium text-sm">servicios</a>
-            </li>
-            <li className="navOpt">
-              <a href="/contact" className="font-medium text-sm">acerca de</a>
-            </li>
-            <li className="navOpt">
-              <a href="/contact" className="font-medium text-sm">ayuda</a>
-            </li>
-          </ul>
-
-          {/* Botón de menú hamburguesa en móvil */}
-          <button
-            className="md:hidden text-white"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-
-        </nav>
-
-        {/* Menú desplegable en móvil */}
-        {menuOpen && (
-          <ul className="md:hidden flex flex-col items-center gap-4 py-4 bg-[var(--surface)]">
-            <li><Link href="/" className="font-medium text-sm">Inicio</Link></li>
-            <li><Link href="/about" className="font-medium text-sm">Servicios</Link></li>
-            <li><Link href="/contact" className="font-medium text-sm">Acerca de</Link></li>
-            <li><Link href="/help" className="font-medium text-sm">Ayuda</Link></li>
-          </ul>
-        )}
-
+        <Navbar></Navbar>
 
         {/* cuerpo principal */}
         <main className="flex-grow flex flex-col items-center justify-center relative bottom-24">
@@ -161,7 +118,7 @@ export default function Home() {
 
         </div>
 
-        
+
 
 
 
@@ -192,7 +149,7 @@ export default function Home() {
               <a href="/" className="text-xs text-[var(--defaultWhite)]">Youtube</a>
               <a href="/" className="text-xs text-[var(--defaultWhite)]">Tiktok</a>
               <a href="/" className="text-xs text-[var(--defaultWhite)]">X / Twitter</a>
-              
+
             </div>
 
           </div>
