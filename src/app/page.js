@@ -91,7 +91,7 @@ export default function Home() {
             className="text-lg md:text-lg text-[var(--defaultWhite)] text-center z-10 my-4" />
 
           <a
-            href="/about"
+            href="/Details"
             className="z-10 btn gap-1 px-6 py-2 bg-[var(--primary)] border-[var(--highlight)] text-[var(--defaultWhite)] rounded-full font-medium text-base flex items-center"
           >
             Descubrir <ChevronRight size={24} color="white" />
@@ -157,25 +157,52 @@ export default function Home() {
             elementLevelClassName="text-3xl font-semibold tracking-tighter"
           />
 
+          <img src="images/DownloadBtn.png" className="h-8 mt-5" />
+
         </div>
+
+        
+
+
+
+
       </section>
 
       {/* footer */}
-      <footer className="bg-[var(--darkThemed)] p-4 mt-auto w-full">
-        <div className="w-full h-auto">
-          <span className="font-medium tracking-tight text-xl text-[var(--highlight)]">Recursos</span>
-          <div className="flex flex-col mt-2">
-              <a href="/" className="text-sm text-[var(--defaultWhite)]">Aplicación</a>
-              <a href="/" className="text-sm text-[var(--defaultWhite)]">Ducumentación</a>
-              <a href="/" className="text-sm text-[var(--defaultWhite)]">FAQ</a>
+      <footer className="bg-[var(--darkThemed)] pt-8 pb-4 px-4 mt-6 w-full ">
+
+        <div className="flex flex-row justify-evenly">
+          <div className="w-auto h-auto">
+            <span className="font-medium tracking-tight text-base  text-[var(--highlight)]">Recursos</span>
+            <div className="flex flex-col mt-2">
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Aplicación</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Ducumentación</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Nosotros</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Soporte</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">FAQ</a>
+            </div>
+
           </div>
-          
+
+          <div className="w-auto h-auto">
+            <span className="font-medium tracking-tight text-base  text-[var(--highlight)]">Síguenos</span>
+            <div className="flex flex-col mt-2">
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Facebook</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Instagram</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Youtube</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Tiktok</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">X / Twitter</a>
+              
+            </div>
+
+          </div>
+
+          <div className="w-auto h-auto">
+            <span className="font-medium tracking-tight text-base  text-[var(--highlight)]">Descarga la app</span>
+          </div>
         </div>
 
-
-
-
-        <p className="text-[var(--defaultWhite)] text-xs md:text-xs mt-6">&copy; 2025 Keidot. Todos los derechos reservados.</p>
+        <p className="text-[var(--defaultWhite)] text-xs md:text-xs mt-14">&copy; 2025 Keidot. Todos los derechos reservados.</p>
       </footer>
     </div>
   );
