@@ -38,11 +38,6 @@ ignorar por ahora
   }
 } */
 
-/* 
-body {
-  background: var(--defaultWhite);
-} */
-
 /* cambiar propiedades de las opciones del nav */
 nav a {
   transition: 0.25s cubic-bezier(0, .37, .32, 1);
@@ -83,4 +78,8 @@ nav a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.navBar{
+  height: 4em;
 }

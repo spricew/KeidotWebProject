@@ -10,7 +10,7 @@ import ShinyText from "../../components/ShinyText";
 import { ChevronRight } from "lucide-react";
 import RotatingText from "../../components/rotatingText";
 import StarBorder from "../../components/starBorder";
-import Navbar from "../../components/navBar";
+import Navbar from "../../components/Navbar";
 
 export default function Home() {
   // inicializacion de metodos
@@ -30,7 +30,47 @@ export default function Home() {
 
         {/* barra de navegacion principal */}
 
-        <Navbar></Navbar>
+        <nav className={`w-full z-50 px-6 md:px-24 flex justify-between items-center md:h-20 h-12`}>
+
+          {/* Logo */}
+          <div className="w-auto flex flex-row h-full place-items-center">
+            <img src="/images/Logo.png" alt="Keidot Logo" className="h-5 md:h-8 mr-2" />
+            <span className="tracking-tight font-semibold text-[var(--defaultWhite)] text-sm md:text-lg">
+              Keidot
+            </span>
+          </div>
+
+          {/* Opciones de la navbar */}
+          <ul className="hidden md:flex justify-center gap-14 capitalize text-white">
+            <li className="navOpt">
+              <Link href="/" className="font-medium text-sm">Inicio</Link>
+            </li>
+            <li className="navOpt">
+              <Link href="/about" className="font-medium text-sm">Servicios</Link>
+            </li>
+            <li className="navOpt">
+              <Link href="/contact" className="font-medium text-sm">Acerca de</Link>
+            </li>
+            <li className="navOpt">
+              <Link href="/help" className="font-medium text-sm">Ayuda</Link>
+            </li>
+          </ul>
+
+          {/* Botón de menú hamburguesa en móvil */}
+          <button className="md:hidden text-white" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+            {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+
+          {/* Menú desplegable en móvil */}
+          {menuOpen && (
+            <ul className="absolute top-12 left-0 w-full bg-gray-800 flex flex-col items-center py-4 z-50 md:hidden">
+              <li><Link href="/" className="text-white py-2">Inicio</Link></li>
+              <li><Link href="/about" className="text-white py-2">Servicios</Link></li>
+              <li><Link href="/contact" className="text-white py-2">Acerca de</Link></li>
+              <li><Link href="/help" className="text-white py-2">Ayuda</Link></li>
+            </ul>
+          )}
+        </nav>
 
         {/* cuerpo principal */}
         <main className="flex-grow flex flex-col items-center justify-center relative bottom-24">
@@ -114,7 +154,7 @@ export default function Home() {
             elementLevelClassName="text-3xl font-semibold tracking-tighter"
           />
 
-          <img src="images/DownloadBtn.png" className="h-8 mt-5" />
+          <img src="images/DownloadBtn.png" className="h-9 mt-5" />
 
         </div>
 
