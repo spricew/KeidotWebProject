@@ -63,10 +63,21 @@ nav a {
 
 }
 
+.btnInv{
+
+  transition: 0.3s cubic-bezier(0, .37, .32, 1);
+}
+
 .btn:hover {
   transition: 0.3s cubic-bezier(0, .37, .32, 1);
   transform: scale(1.05);
   background: var(--primaryHigh);
+}
+
+.btnInv:hover {
+  transition: 0.3s cubic-bezier(0, .37, .32, 1);
+  transform: scale(1.05);
+  background: var(--primaryContainer);
 }
 
 .shiny-text {
@@ -85,10 +96,10 @@ nav a {
 }
 
 #mainDetailsTit{
-  letter-spacing: -0.06em;
   font-family: "Gotham", Arial, Helvetica, sans-serif;
-  background: linear-gradient(90deg, #3CB978 8%, #308157 35%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+
+#qrCode {
+  height: 105px;
+  width: 105px;
 }

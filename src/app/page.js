@@ -90,12 +90,23 @@ export default function Home() {
             speed={3}
             className="text-lg md:text-lg text-[var(--defaultWhite)] text-center z-10 my-4" />
 
-          <a
-            href="/Details"
-            className="z-10 btn gap-1 px-6 py-2 bg-[var(--primary)] border-[var(--highlight)] text-[var(--defaultWhite)] rounded-full font-medium text-base flex items-center"
-          >
-            Descubrir <ChevronRight size={24} color="white" />
-          </a>
+
+          <div className="flex flex-row">
+            <a
+              href="/Details"
+              className="mr-3 z-10 btn gap-1 px-6 py-2 bg-[var(--primary)] border-[var(--highlight)] text-[var(--defaultWhite)] rounded-full font-medium text-base flex items-center"
+            >
+              Obtén Keidot<ChevronRight size={24} color="white" />
+            </a>
+
+            <a
+              href="/Details"
+              className="z-10 gap-1 px-6 py-2 bg-[var(--whiteThemed)] border-[var(--highlight)] text-[var(--primary)] rounded-full font-medium text-base flex items-center btnInv"
+            >
+              Sobre Keidot <ChevronRight size={24} color="black" />
+            </a>
+          </div>
+
 
         </main>
       </section>
@@ -136,7 +147,7 @@ export default function Home() {
         </div>
 
         {/*subtitulo*/}
-        <div className="flex flex-col w-full mb-6 h-auto items-center justify-center -mt-6">
+        <div className="flex flex-col w-full mb-16 h-auto items-center justify-center -mt-10">
 
           <div className="w-full flex justify-center items-center">
             <h2 className="gradText mr-1 text-3xl font-semibold tracking-tighter -mb-2">Con Keidot</h2>
@@ -161,23 +172,26 @@ export default function Home() {
 
         </div>
 
+      </section>
 
 
+      {/* seccion de preguntas */}
+      <section className="w-full h-auto md:px-24 px-4 mt-4 py-6 flex flex-col items-center bg-[var(--surface)]">
 
-
-
+        <span className="md:text-2xl text-2xl mb-4 tracking-tighter font-medium text-[var(--primary)]">¿Tienes alguna pregunta?</span>
+        <span className="md:text-lg text-2xl tracking-tighter font-normal text-[var(--primary)]">Estamos para ayudarte en keidot@gmail.com</span>
       </section>
 
       {/* footer */}
-      <footer className="bg-[var(--darkThemed)] pt-8 pb-4 px-4 mt-6 w-full ">
+      <footer className="bg-[var(--darkThemed)] pt-8 pb-6 px-4w-full ">
 
-        <div className="flex flex-row justify-evenly">
+        <div className="flex flex-row justify-evenly mb-12">
           <div className="w-auto h-auto">
             <span className="font-medium tracking-tight text-base  text-[var(--highlight)]">Recursos</span>
             <div className="flex flex-col mt-2">
               <a href="/" className="text-xs text-[var(--defaultWhite)]">Aplicación</a>
               <a href="/" className="text-xs text-[var(--defaultWhite)]">Ducumentación</a>
-              <a href="/" className="text-xs text-[var(--defaultWhite)]">Nosotros</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Sobre Keidot</a>
               <a href="/" className="text-xs text-[var(--defaultWhite)]">Soporte</a>
               <a href="/" className="text-xs text-[var(--defaultWhite)]">FAQ</a>
             </div>
@@ -198,11 +212,24 @@ export default function Home() {
           </div>
 
           <div className="w-auto h-auto">
-            <span className="font-medium tracking-tight text-base  text-[var(--highlight)]">Descarga la app</span>
+            <span className="font-medium tracking-tight text-base text-[var(--highlight)]">Descarga la app</span>
+            <div className="flex flex-col mt-2 items-center">
+              <img src="/images/QR.png" alt="Keidot Logo" className="mr-5" id="qrCode" />
+            </div>
+
           </div>
         </div>
 
-        <p className="text-[var(--defaultWhite)] text-xs md:text-xs mt-14">&copy; 2025 Keidot. Todos los derechos reservados.</p>
+        <hr></hr>
+        {/* marca */}
+        <div className="mt-12 flex flex-row w-full px-20">
+          <img src="/images/KeidotIcon.png" alt="Keidot Logo" className="h-5 md:h-8 mr-5" />
+          <div className="flex flex-col">
+            <p className="text-[var(--defaultWhite)] text-xs md:text-xs">&copy; 2025 Keidot. Todos los derechos reservados.</p>
+            <p className="text-[var(--defaultWhite)] text-xs md:text-xs w-3/5">México Financiera S.A. de C.V. S.F.P. Manuel Avila Camacho 201 Piso 9, Col. Polanco I Sección, CP 11510, Alcaldía Miguel Hidalgo, Ciudad de México.</p>
+          </div>
+        </div>
+
       </footer>
     </div>
   );
