@@ -12,10 +12,13 @@ export default function Navbar({ backgroundColor = "bg-black", textColor = "text
 
       {/* Logo */}
       <div className="w-auto flex flex-row h-full place-items-center">
-        <img src="/images/Logo.png" alt="Keidot Logo" className="h-5 md:h-8 mr-2" />
-        <span className={`tracking-tight font-semibold text-sm md:text-lg ${textColor}`}>
-          Keidot
-        </span>
+        <a href="/" className="flex flex-row items-center">
+          <img src="/images/Logo.png" alt="Keidot Logo" className="h-5 md:h-8 mr-2" />
+          <span className={`tracking-tight font-semibold text-sm md:text-lg ${textColor}`}>
+            Keidot
+          </span>
+        </a>
+
       </div>
 
       {/* Opciones de la navbar */}

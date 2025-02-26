@@ -34,10 +34,13 @@ export default function Home() {
 
           {/* Logo */}
           <div className="w-auto flex flex-row h-full place-items-center">
-            <img src="/images/Logo.png" alt="Keidot Logo" className="h-5 md:h-8 mr-2" />
-            <span className="tracking-tight font-semibold text-[var(--defaultWhite)] text-sm md:text-lg">
-              Keidot
-            </span>
+            <a href="/" className="flex flex-row items-center">
+              <img src="/images/Logo.png" alt="Keidot Logo" className="h-5 md:h-8 mr-2" />
+              <span className="tracking-tight font-medium text-[var(--defaultWhite)] text-sm md:text-lg">
+                Keidot
+              </span>
+            </a>
+
           </div>
 
           {/* Opciones de la navbar */}
