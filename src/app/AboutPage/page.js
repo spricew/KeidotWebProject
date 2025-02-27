@@ -11,9 +11,9 @@ export default function AboutUs() {
       {/* Contenido principal */}
       <main className="flex-grow flex flex-col justify-center md:px-24 px-4 py-12">
 
-        <div>
-          <h1 className="text-3xl font-medium text-center text-[var(--foreground)] tracking-tighter mb-8 w-4">
-            Conoce a nuestros <span className="font-semibold text-3xl">desarrolladores</span>.
+        <div className="flex justify-center w-full mb-12">
+          <h1 className="text-4xl font-medium text-center text-[var(--foreground)] tracking-tighter w-[15em]">
+            Conoce a nuestros <span className="font-semibold text-4xl">desarrolladores</span>.
           </h1>
         </div>
 
