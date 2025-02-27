@@ -14,14 +14,35 @@ export default function Details() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[var(--surface)]">
-      
-      {/* navbar customizada */}
-      <Navbar backgroundColor="bg-white" textColor="text-[var(--highlight)]" />
 
-      {/* Contenido principal que ocupa el espacio restante */}
-      <main className="flex-grow md:px-24 px-4 py-12">
-        
-      </main>
+      <div className="h-screen">
+        {/* navbar customizada */}
+        <Navbar backgroundColor="bg-white" textColor="text-[var(--highlight)]" />
+
+        {/* Contenido principal que ocupa el espacio restante */}
+        <main className="flex-grow pt-12 h-full">
+
+          {/* banner */}
+          <div className="flex flex-row justify-center">
+
+            {/* imagen de celular */}
+            <img src="/images/mockup1.png" className="h-18 mr-28"></img>
+
+            {/* enlaces */}
+            <div className="flex flex-col pt-12 w-[14em]">
+
+              {/* qr */}
+              <div className=" flex flex-col justify-center items-center w-full">
+                <img src="/images/QR.png" alt="Keidot Logo" className="mb-4" />
+                <span className="text-[var(--foreground)] tracking-tight text-sm font-medium text-center">Escanea este código QR con tu teléfono para descargar la aplicación de Keidot</span>
+              </div>
+              {/* botones */}
+              <img src="images/DownloadBtn.png" className="w-full mt-5" />
+            </div>
+          </div>
+        </main>
+      </div>
+
 
       {/* Footer siempre en la parte inferior */}
       <footer className="bg-[var(--darkThemed)] px-4 py-6 w-full">
