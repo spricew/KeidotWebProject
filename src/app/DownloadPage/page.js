@@ -48,7 +48,7 @@ export default function Details() {
       <footer className="bg-[var(--darkThemed)] px-4 py-6 w-full">
         {/* marca */}
         <div className=" flex flex-row w-full px-20">
-          <img src="/images/KeidotIcon.png" alt="Keidot Logo" className="h-5 md:h-5 mr-5" />
+          <img src="/images/KeidotIcon.png" alt="Keidot Logo" className="h-5 md:h-5 mr-5 mt-2" />
           <div className="flex flex-col">
             <p className="text-[var(--defaultWhite)] text-[0.65em]">
               &copy; 2025 Keidot. Todos los derechos reservados.

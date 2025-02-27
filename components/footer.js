@@ -1,27 +1,35 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
       <footer className="bg-[var(--darkThemed)] px-4 py-8 w-full">
       <div className="flex flex-row justify-evenly">
           <div className="w-auto h-auto">
-            <span className="font-medium tracking-tight text-base  text-[var(--highlight)]">Recursos</span>
+            <span className="font-medium tracking-tight text-base  text-[var(--highlight)]">Soporte</span>
             <div className="flex flex-col mt-2">
-              <a href="/" className="text-xs text-[var(--defaultWhite)]">Aplicación</a>
-              <a href="/" className="text-xs text-[var(--defaultWhite)]">Ducumentación</a>
-              <a href="/" className="text-xs text-[var(--defaultWhite)]">Sobre Keidot</a>
-              <a href="/" className="text-xs text-[var(--defaultWhite)]">Soporte</a>
               <a href="/" className="text-xs text-[var(--defaultWhite)]">FAQ</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Centro de ayuda</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Contáctanos</a>
             </div>
 
           </div>
 
           <div className="w-auto h-auto">
-            <span className="font-medium tracking-tight text-base  text-[var(--highlight)]">Síguenos</span>
+            <span className="font-medium tracking-tight text-base  text-[var(--highlight)]">Recursos</span>
             <div className="flex flex-col mt-2">
-              <a href="/" className="text-xs text-[var(--defaultWhite)]">Facebook</a>
-              <a href="/" className="text-xs text-[var(--defaultWhite)]">Instagram</a>
-              <a href="/" className="text-xs text-[var(--defaultWhite)]">Youtube</a>
-              <a href="/" className="text-xs text-[var(--defaultWhite)]">Tiktok</a>
-              <a href="/" className="text-xs text-[var(--defaultWhite)]">X / Twitter</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Términos y condiciones</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Política de privacidad</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Plítica de cookies</a>
+            </div>
+
+          </div>
+
+          <div className="w-auto h-auto">
+            <span className="font-medium tracking-tight text-base  text-[var(--highlight)]">Compañía</span>
+            <div className="flex flex-col mt-2">
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Acerca de nosotros</a>
+              <a href="/" className="text-xs text-[var(--defaultWhite)]">Acerca de Keidot</a>
+              <Link href="/ServicesPage" className="text-xs text-[var(--defaultWhite)]">Todos los servicios</Link>
 
             </div>
 

@@ -27,10 +27,10 @@ export default function Navbar({ backgroundColor = "bg-black", textColor = "text
           <Link href="/" className="font-medium text-sm">Inicio</Link>
         </li>
         <li className="navOpt">
-          <Link href="/about" className="font-medium text-sm">Servicios</Link>
+          <Link href="/ServicesPage" className="font-medium text-sm">Servicios</Link>
         </li>
         <li className="navOpt">
-          <Link href="/contact" className="font-medium text-sm">Acerca de</Link>
+          <Link href="/AboutPage" className="font-medium text-sm">Acerca de</Link>
         </li>
         <li className="navOpt">
           <Link href="/help" className="font-medium text-sm">Ayuda</Link>
@@ -47,7 +47,7 @@ export default function Navbar({ backgroundColor = "bg-black", textColor = "text
         <ul className="absolute top-12 left-0 w-full bg-gray-800 flex flex-col items-center py-4 z-50 md:hidden">
           <li><Link href="/" className="text-white py-2">Inicio</Link></li>
           <li><Link href="/about" className="text-white py-2">Servicios</Link></li>
-          <li><Link href="/contact" className="text-white py-2">Acerca de</Link></li>
+          <li><Link href="/AboutPage" className="text-white py-2">Acerca de</Link></li>
           <li><Link href="/help" className="text-white py-2">Ayuda</Link></li>
         </ul>
       )}

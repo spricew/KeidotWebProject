@@ -4,7 +4,6 @@
 // librerias
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react"; // Íconos para menú
 import Navbar from "../../../components/Navbar";
 import BlurText from "../../../components/blurText";
 import Footer from "../../../components/footer";

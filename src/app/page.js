@@ -49,13 +49,13 @@ export default function Home() {
               <Link href="/" className="font-medium text-sm">Inicio</Link>
             </li>
             <li className="navOpt">
-              <Link href="/about" className="font-medium text-sm">Servicios</Link>
+              <Link href="/ServicesPage" className="font-medium text-sm">Servicios</Link>
             </li>
             <li className="navOpt">
-              <Link href="/contact" className="font-medium text-sm">Acerca de</Link>
+              <Link href="/AboutPage" className="font-medium text-sm">Acerca de</Link>
             </li>
             <li className="navOpt">
-              <Link href="/help" className="font-medium text-sm">Ayuda</Link>
+              <Link href="/" className="font-medium text-sm">Ayuda</Link>
             </li>
           </ul>
 
@@ -96,15 +96,18 @@ export default function Home() {
               href="/DownloadPage"
               className="mr-3 z-10 btn gap-1 px-6 py-2 bg-[var(--primary)] border-[var(--highlight)] text-[var(--defaultWhite)] rounded-full font-medium text-base flex items-center"
             >
-              Obtén Keidot<ChevronRight size={24} color="white" />
+              Obtén Keidot<ChevronRight className="text-inherit" size={24} />
             </Link>
 
             <Link
               href="/Details"
-              className="z-10 gap-1 px-6 py-2 bg-[var(--whiteThemed)] border-[var(--highlight)] text-[var(--primary)] rounded-full font-medium text-base flex items-center btnInv"
+              className="z-10 gap-1 px-6 py-2 bg-[var(--surface)] border-[var(--highlight)] 
+             text-[var(--primary)] rounded-full font-medium text-base flex items-center btnInv"
             >
-              Sobre Keidot <ChevronRight size={24} color="black" />
+              Sobre Keidot
+              <ChevronRight className="text-inherit" size={24} />
             </Link>
+
           </div>
 
 
