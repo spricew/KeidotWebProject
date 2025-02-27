@@ -27,8 +27,8 @@ export default function Footer() {
           <div className="w-auto h-auto">
             <span className="font-medium tracking-tight text-base  text-[var(--highlight)]">Compañía</span>
             <div className="flex flex-col mt-2">
-              <a href="/" className="text-xs text-[var(--defaultWhite)]">Acerca de nosotros</a>
-              <a href="/" className="text-xs text-[var(--defaultWhite)]">Acerca de Keidot</a>
+              <Link href="/AboutPage" className="text-xs text-[var(--defaultWhite)]">Acerca de nosotros</Link>
+              <Link href="/Details" className="text-xs text-[var(--defaultWhite)]">Acerca de Keidot</Link>
               <Link href="/ServicesPage" className="text-xs text-[var(--defaultWhite)]">Todos los servicios</Link>
 
             </div>

@@ -55,7 +55,7 @@ export default function Home() {
               <Link href="/AboutPage" className="font-medium text-sm">Acerca de</Link>
             </li>
             <li className="navOpt">
-              <Link href="/" className="font-medium text-sm">Ayuda</Link>
+              <Link href="/HelpPage" className="font-medium text-sm">Ayuda</Link>
             </li>
           </ul>
 
@@ -70,7 +70,7 @@ export default function Home() {
               <li><Link href="/" className="text-white py-2">Inicio</Link></li>
               <li><Link href="/about" className="text-white py-2">Servicios</Link></li>
               <li><Link href="/contact" className="text-white py-2">Acerca de</Link></li>
-              <li><Link href="/help" className="text-white py-2">Ayuda</Link></li>
+              <li><Link href="/HelpPage" className="text-white py-2">Ayuda</Link></li>
             </ul>
           )}
         </nav>

@@ -33,7 +33,7 @@ export default function Navbar({ backgroundColor = "bg-black", textColor = "text
           <Link href="/AboutPage" className="font-medium text-sm">Acerca de</Link>
         </li>
         <li className="navOpt">
-          <Link href="/help" className="font-medium text-sm">Ayuda</Link>
+          <Link href="/HelpPage" className="font-medium text-sm">Ayuda</Link>
         </li>
       </ul>
 
