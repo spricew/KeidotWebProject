@@ -54,7 +54,7 @@ export default function Services() {
           <div className="max-w-[18em] rounded-2xl overflow-hidden shadow-lg bg-[var(--defaultWhite)] flex flex-col">
             <img
               className="w-full h-48 object-cover"
-              src="/images/ServiceRenta.jpg"
+              src="/images/Maquinaria.jpg"
               alt="Renta de maquinaria"
             />
             <div className="p-6 flex flex-col flex-grow">
@@ -78,7 +78,7 @@ export default function Services() {
           <div className="max-w-[18em] rounded-2xl overflow-hidden shadow-lg bg-[var(--defaultWhite)] flex flex-col">
             <img
               className="w-full h-48 object-cover"
-              src="/images/ServiceLimpieza.jpg"
+              src="/images/limpieza.jpg"
               alt="Limpieza de jardín"
             />
             <div className="p-6 flex flex-col flex-grow">
@@ -102,7 +102,7 @@ export default function Services() {
           <div className="max-w-[18em] rounded-2xl overflow-hidden shadow-lg bg-[var(--defaultWhite)] flex flex-col">
             <img
               className="w-full h-48 object-cover"
-              src="/images/ServiceDecoracion.jpg"
+              src="/images/decoracion.jpg"
               alt="Decoración de jardín"
             />
             <div className="p-6 flex flex-col flex-grow">
@@ -126,7 +126,7 @@ export default function Services() {
           <div className="max-w-[18em] rounded-2xl overflow-hidden shadow-lg bg-[var(--defaultWhite)] flex flex-col">
             <img
               className="w-full h-48 object-cover"
-              src="/images/ServicePlantas.jpg"
+              src="/images/ventaPlantas.jpg"
               alt="Venta de plantas"
             />
             <div className="p-6 flex flex-col flex-grow">
@@ -150,7 +150,7 @@ export default function Services() {
           <div className="max-w-[18em] rounded-2xl overflow-hidden shadow-lg bg-[var(--defaultWhite)] flex flex-col">
             <img
               className="w-full h-48 object-cover"
-              src="/images/ServicePoda.jpg"
+              src="/images/podaArboles.jpg"
               alt="Poda de árboles"
             />
             <div className="p-6 flex flex-col flex-grow">
