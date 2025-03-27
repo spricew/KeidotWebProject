@@ -8,7 +8,7 @@ export default function Navbar({ backgroundColor = "bg-black", textColor = "text
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={`w-full z-50 px-6 md:px-24 flex justify-between items-center navBar h-12 ${backgroundColor} border-b`}>
+    <nav className={`w-full z-50 flex justify-between items-center px-6 px-24navBar h-12 ${backgroundColor} border-b`}>
 
       {/* Logo */}
       <div className="w-auto flex flex-row h-full place-items-center">
